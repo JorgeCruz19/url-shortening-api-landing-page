@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL shortening API</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <header class="container bg-white pb-100">
+        <nav class="main-menu">
+            <img src="./img/logo-dark.svg" alt="Logo Shorten" class="main-menu__logo">
+        </nav>
+        <section class="grid grid-columns-2">
+            <div class="grid-item">
+                <img src="./img/illustration-working.svg" alt="Ilustracion del trabajo">
+            </div>
+            <div class="grid-item">
+                <h1 class="hero-title">More than just shorten links</h1>
+                <p class="hero-paragraph">Build your brand's recognition and get detailed insigths on how your links are perfoming.</p>
+                <a href="#" class="btn btn-primary">Get Started</a>
+            </div>
+        </section>
+    </header>
+    <section class="container forward">
+        <form>
+            <div class="grid grid-columns-2-1 bg-abstract">
+                <div class="form-group">
+                    <input id="input" type="text" class="form-control" placeholder="Shorten a link here...">
+                    <small class="error">Please add a link</small>
+                </div>
+                <div>
+                    <button id="btn-submit" type="submit" class="btn btn-primary w-100 border-radius-small">Shorten It!</button>
+                </div>
+            </div>
+        </form>
+    </section>
+    <main class="top-form bg-gray">
+            <section class="container" style="margin-bottom: 5.5rem;">
+                <div class="lds-ellipsis">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div id="content-short-url"></div>
+                <h2>Advanced Statistics</h2>
+                <p style="margin-bottom: 5rem;">Track how your links are perfoming across the web with our advanced statitics dashboard</p>
+                <div class="grid-statistics">
+                    <article class="grid-item-statistics">
+                        <div>
+                            <img src="./img/icon-brand-recognition.svg" alt="Icono Brand Recognition">
+                        </div>
+                        <h4>Brand Recognition</h4>
+                        <p>Boost your brand recognition with each click. Generic links don't mean a thing. Branded links help instil confidence in your content.</p>
+                    </article>
+                    <article class="grid-item-statistics">
+                        <div>
+                            <img src="./img/icon-detailed-records.svg" alt="Icono Detailed Records">
+                        </div>
+                        <h4>Detailed Records</h4>
+                        <p>Gain insights into who is clicking your links. Knowing when and where people engage with your content helps inform better decisions.</p>
+                    </article>
+                    <article class="grid-item-statistics">
+                        <div>
+                            <img src="./img/icon-fully-customizable.svg" alt="Icono Brand Recognition">
+                        </div>
+                        <h4>Fully Customizable</h4>
+                        <p>Improve brand awareness and content discoverabily through customizable links, supercharging audience engagement.</p>
+                    </article>
+                </div>
+            </section>
+        <section class="bg-abstract-2">
+            <div class="container">
+                <h2 class="text-white">Boots your links today</h2>
+                <a href="#" class="btn btn-primary">Get Started</a>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-dark">
+        <div class="container">
+            <div class="grid-footer">
+                <div class="grid-footer-item">
+                    <img src="./img/logo-white.svg" alt="Logo Shorten">
+                </div>
+                <div class="grid-footer-item">
+                    <h5>Features</h5>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                Link shortening
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Branded Links
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                               Analytics
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="grid-footer-item">
+                    <h5>Resources</h5>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                Blog
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Developers
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                               Support
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="grid-footer-item">
+                    <h5>Company</h5>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                About
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Our team
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                               Careers
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="grid-footer-item">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="./img/icon-facebook.svg" alt="Icono de Facebook">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/icon-twitter.svg" alt="Icono de Twitter">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/icon-pinterest.svg" alt="Icono de Pinterest">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/icon-instagram.svg" alt="Icono de Instagram">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/index.js"></script>
+</body>
+</html>
