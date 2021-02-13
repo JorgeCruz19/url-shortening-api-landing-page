@@ -2,9 +2,11 @@ const input = document.getElementById('input'),
       btnSubmit = document.getElementById('btn-submit'),
       containerShortUrl = document.getElementById('content-short-url'),
       errorMessage = document.querySelector('.error'),
-      loaderElement = document.querySelector('.lds-ellipsis');
-    
-    loaderElement.classList.add('is-hide');
+      loaderElement = document.querySelector('.lds-ellipsis'),
+      btnMenu = document.getElementById('btn-menu'),
+      menu = document.getElementById('menu');
+
+      loaderElement.classList.add('is-hide')
 const handleSubmit = async e => {
     e.preventDefault();
     if (input.value == "") {
@@ -96,3 +98,6 @@ const copyShortUrl = (text) => {
     }
 }
 btnSubmit.addEventListener('click', handleSubmit)
+btnMenu.addEventListener('click', () => {
+    menu.classList.toggle('is-show');
+})
